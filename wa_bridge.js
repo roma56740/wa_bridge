@@ -18,6 +18,8 @@
     const djangoIncoming = "https://usersiteai.pythonanywhere.com/dashboard/api/wa/message_in/"; // входящие
     const djangoSend = "https://usersiteai.pythonanywhere.com/dashboard/api/wa/send/"; // (резерв)
 
+    app.get("/", (req, res) => res.send("✅ WhatsApp Bridge is running"));
+
     const clients = {}; // username -> { client, qr, ready }
 
     // ==========================
@@ -50,6 +52,8 @@
                 console.error(`[❌] Ошибка генерации QR: ${err.message}`);
             }
         });
+
+        
 
 
         // Аутентификация
