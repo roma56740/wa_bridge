@@ -15,8 +15,8 @@
     const PORT = 3001;
 
     // Django API URLs
-    const djangoIncoming = "http://127.0.0.1:8000/api/wa/message_in/"; // входящие
-    const djangoSend = "http://127.0.0.1:8000/api/wa/send/"; // (резерв)
+    const djangoIncoming = "https://usersiteai.pythonanywhere.com/dashboard/api/wa/message_in/"; // входящие
+    const djangoSend = "https://usersiteai.pythonanywhere.com/dashboard/api/wa/send/"; // (резерв)
 
     const clients = {}; // username -> { client, qr, ready }
 
